@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap'); */
 
 :root {
     --text-main-color: #212121;
@@ -124,11 +124,25 @@ ul {
 }
 
 .our-team li{
+    width: 270px;
+    text-align: center;
+
     background-color: var(--background-main-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+}
+
+.our-team .text-h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+}
+
+.our-team .text {
+    font-size: 16px;
+    line-height: 1.18;
 }
 
 /* Портфолио */
@@ -146,6 +160,28 @@ ul {
 .filters .button:focus {
     background-color: var(--active-main-color);
     color: var(--text-invert-color);
+}
+
+.portfolio-list li {
+    width: 370px;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+}
+
+.our-portfolio .text-h3 {
+    font-size: 18px;
+    line-height: 2.0;
+    letter-spacing: 0.06em;
+}
+
+.our-portfolio .link:hover,
+.our-portfolio .link:focus {
+    color: var(--text-main-color);
+}
+
+.our-portfolio .text {
+    font-size: 16px;
+    line-height: 1.88;
 }
 
 /* Общее */
@@ -177,5 +213,9 @@ ul {
 
 .link:hover,
 .link:focus {
+    color: var(--active-main-color);
+}
+
+.link-current {
     color: var(--active-main-color);
 }
